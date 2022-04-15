@@ -1,0 +1,311 @@
+Dependencies for Project 'php_dev', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6150000::V6.15::ARMCLANG
+F (.\bsp.c)(0x61B62559)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/bsp.o -MD)
+I (bsp.h)(0x61B6221E)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+I (php_lcd.h)(0x61127F8D)
+I (php_keypad.h)(0x611280A0)
+I (php_uart.h)(0x612AABBF)
+I (php_led.h)(0x61740F40)
+I (php_switch.h)(0x61223673)
+I (php_adc.h)(0x613C95D4)
+I (php_spi.h)(0x61B3BBB8)
+I (misc.h)(0x613E57C4)
+I (php_i2c.h)(0x6150522E)
+I (php_pwm.h)(0x61ABBC49)
+I (dev_mpu.h)(0x6145E577)
+I (dev_steppermotor.h)(0x61B61B68)
+I (dev_servomotor.h)(0x61B62065)
+I (dev_buzzer.h)(0x61A7ED6E)
+I (dev_glcd.h)(0x61B61DEE)
+I (php_gpio.h)(0x61ACBA93)
+F (.\dev_buzzer.c)(0x61ACEE03)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/dev_buzzer.o -MD)
+I (dev_buzzer.h)(0x61A7ED6E)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+I (misc.h)(0x613E57C4)
+I (php_pwm.h)(0x61ABBC49)
+I (php_switch.h)(0x61223673)
+F (.\dev_glcd.c)(0x61B61DEE)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/dev_glcd.o -MD)
+I (dev_glcd.h)(0x61B61DEE)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+I (php_gpio.h)(0x61ACBA93)
+I (misc.h)(0x613E57C4)
+I (php_spi.h)(0x61B3BBB8)
+F (.\dev_mpu.c)(0x6150D7A0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/dev_mpu.o -MD)
+I (dev_mpu.h)(0x6145E577)
+I (php_i2c.h)(0x6150522E)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+I (misc.h)(0x613E57C4)
+I (php_uart.h)(0x612AABBF)
+F (.\dev_servomotor.c)(0x61ACEE03)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/dev_servomotor.o -MD)
+I (dev_servomotor.h)(0x61B62065)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+I (misc.h)(0x613E57C4)
+I (php_pwm.h)(0x61ABBC49)
+F (.\dev_steppermotor.c)(0x61B62802)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/dev_steppermotor.o -MD)
+I (dev_steppermotor.h)(0x61B61B68)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+I (misc.h)(0x613E57C4)
+F (.\main.c)(0x61B61745)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/main.o -MD)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (bsp.h)(0x61B6221E)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+I (php_lcd.h)(0x61127F8D)
+I (php_keypad.h)(0x611280A0)
+I (php_uart.h)(0x612AABBF)
+I (php_led.h)(0x61740F40)
+I (php_switch.h)(0x61223673)
+I (php_adc.h)(0x613C95D4)
+I (php_spi.h)(0x61B3BBB8)
+I (misc.h)(0x613E57C4)
+I (php_i2c.h)(0x6150522E)
+I (php_pwm.h)(0x61ABBC49)
+I (dev_mpu.h)(0x6145E577)
+I (dev_steppermotor.h)(0x61B61B68)
+I (dev_servomotor.h)(0x61B62065)
+I (dev_buzzer.h)(0x61A7ED6E)
+I (dev_glcd.h)(0x61B61DEE)
+I (php_gpio.h)(0x61ACBA93)
+F (.\misc.c)(0x613E58AB)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/misc.o -MD)
+I (misc.h)(0x613E57C4)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+F (.\php.c)(0x6174028D)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php.o -MD)
+I (php.h)(0x617303FA)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php_timer.h)(0x61A298DA)
+F (.\php_adc.c)(0x61730946)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php_adc.o -MD)
+I (php_adc.h)(0x613C95D4)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+F (.\php_gpio.c)(0x61ACE7D8)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php_gpio.o -MD)
+I (php_gpio.h)(0x61ACBA93)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+I (misc.h)(0x613E57C4)
+F (.\php_i2c.c)(0x61730943)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php_i2c.o -MD)
+I (php_i2c.h)(0x6150522E)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+I (misc.h)(0x613E57C4)
+F (.\php_keypad.c)(0x6113A633)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php_keypad.o -MD)
+I (php_keypad.h)(0x611280A0)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+F (.\php_lcd.c)(0x6113A633)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php_lcd.o -MD)
+I (php_lcd.h)(0x61127F8D)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+F (.\php_led.c)(0x61740F40)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php_led.o -MD)
+I (php_led.h)(0x61740F40)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+F (.\php_pwm.c)(0x61ABBC49)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php_pwm.o -MD)
+I (php_pwm.h)(0x61ABBC49)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+F (.\php_spi.c)(0x61B3BEE6)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php_spi.o -MD)
+I (php_spi.h)(0x61B3BBB8)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+I (misc.h)(0x613E57C4)
+F (.\php_switch.c)(0x61B6267F)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php_switch.o -MD)
+I (php_switch.h)(0x61223673)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+F (.\php_timer.c)(0x61A29EDE)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php_timer.o -MD)
+I (php_timer.h)(0x61A298DA)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+F (.\php_uart.c)(0x61B627B7)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/php_uart.o -MD)
+I (php_uart.h)(0x612AABBF)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (TM4C123GH6PM.h)(0x61743C05)
+I (core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
+I (php.h)(0x617303FA)
+I (php_timer.h)(0x61A298DA)
+F (.\bsp.h)(0x61B6221E)()
+F (.\core_cm4.h)(0x562F594A)()
+F (.\dev_buzzer.h)(0x61A7ED6E)()
+F (.\dev_glcd.h)(0x61B61DEE)()
+F (.\dev_mpu.h)(0x6145E577)()
+F (.\dev_servomotor.h)(0x61B62065)()
+F (.\dev_steppermotor.h)(0x61B61B68)()
+F (.\misc.h)(0x613E57C4)()
+F (.\php.h)(0x617303FA)()
+F (.\php_adc.h)(0x613C95D4)()
+F (.\php_gpio.h)(0x61ACBA93)()
+F (.\php_i2c.h)(0x6150522E)()
+F (.\php_keypad.h)(0x611280A0)()
+F (.\php_lcd.h)(0x61127F8D)()
+F (.\php_led.h)(0x61740F40)()
+F (.\php_pwm.h)(0x61ABBC49)()
+F (.\php_spi.h)(0x61B3BBB8)()
+F (.\php_switch.h)(0x61223673)()
+F (.\php_timer.h)(0x61A298DA)()
+F (.\php_uart.h)(0x612AABBF)()
+F (.\tm4c_cmsis.h)(0x60C5E449)()
+F (.\TM4C123GH6PM.h)(0x61743C05)()
+F (RTE\Device\TM4C123GH6PM\startup_TM4C123.s)(0x51B6F216)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-Wa,armasm,--pd,"__UVISION_VERSION SETA 533" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"TM4C123GH6PM SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_tm4c123.o)
+F (RTE\Device\TM4C123GH6PM\system_TM4C123.c)(0x550A73EA)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Include -I ./ek-tm4c123gxl-I./RTE/_Target_1-ID:/Users/chime/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-I"D:/Program Files/Keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/system_tm4c123.o -MD)
+I (D:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F373318)
+I (D:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530F0106)
+I (D:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x550FF03C)
+I (Include\core_cm4.h)(0x562F594A)
+I (Include\core_cmInstr.h)(0x562F594A)
+I (Include\cmsis_armcc_V6.h)(0x562F594A)
+I (Include\core_cmFunc.h)(0x562F594A)
+I (Include\core_cmSimd.h)(0x562F594A)
+I (D:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6F216)

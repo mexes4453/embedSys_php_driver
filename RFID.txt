@@ -1,0 +1,31 @@
+# RFID - AUTHENTICATION, ACCESS CONTROL, VALUE & DATA BLOCK
+# 
+#
+# Check the command for read write of the RFID
+Authenticate sector with key A or Key B
+________________________
+BASIC OPERATION COMMANDS
+------------------------
+-> Read
+-> Write
+-> Increment (2 step operation - Increment and transfer)
+-> Decrement (2 step operation - Increment and transfer)
+-> Restore / Transfer
+
+Prior to command execution, the sector and block for data access should be
+authenticated either with Key A or key B. Hence the need for authentication
+command.
+
+
+__________
+DATA BLOCK
+----------
+consist of 16 bits of data
+0-3 (first 4 bytes) 	stores the data
+4-7 (second 4 bytes) 	stores the complement of data in byte 0-3
+8-11 (third 4 bytes)	stores a duplicate of the data in byte 0-3
+byte-12 		stores the address where data in byte 0-11 are stored
+byte-13			stores the complement of address stored in byte-12
+byte-14			stores the duplicate of address stored in byte-12
+byte-15			stores the duplicate of addr complement in byte-13
+
