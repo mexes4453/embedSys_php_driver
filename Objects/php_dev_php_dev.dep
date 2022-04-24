@@ -1,6 +1,6 @@
 Dependencies for Project 'php_dev', Target 'php_dev': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (.\bsp.c)(0x621259B0)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\bsp.o --omf_browse .\objects\bsp.crf --depend .\objects\bsp.d)
+F (.\bsp.c)(0x6265A285)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\bsp.o --omf_browse .\objects\bsp.crf --depend .\objects\bsp.d)
 I (bsp.h)(0x6204CB82)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
 I (TM4C123GH6PM.h)(0x61743C05)
@@ -19,7 +19,7 @@ I (php_led.h)(0x61740F40)
 I (php_switch.h)(0x61223673)
 I (php_adc.h)(0x613C95D4)
 I (php_spi.h)(0x6206464B)
-I (misc.h)(0x6210E0E1)
+I (misc.h)(0x62656311)
 I (php_i2c.h)(0x6150522E)
 I (php_pwm.h)(0x61ABBC49)
 I (dev_mpu.h)(0x6145E577)
@@ -28,7 +28,7 @@ I (dev_servomotor.h)(0x61B62065)
 I (dev_buzzer.h)(0x61A7ED6E)
 I (dev_glcd.h)(0x61B61DEE)
 I (php_gpio.h)(0x61C9FCE0)
-I (dev_rfid.h)(0x621259B0)
+I (dev_rfid.h)(0x6265A29D)
 F (.\dev_buzzer.c)(0x61ACEE03)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\dev_buzzer.o --omf_browse .\objects\dev_buzzer.crf --depend .\objects\dev_buzzer.d)
 I (dev_buzzer.h)(0x61A7ED6E)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
@@ -41,7 +41,7 @@ I (.\Include\core_cmSimd.h)(0x562F594A)
 I (.\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
 I (php.h)(0x617303FA)
 I (php_timer.h)(0x61A298DA)
-I (misc.h)(0x6210E0E1)
+I (misc.h)(0x62656311)
 I (php_pwm.h)(0x61ABBC49)
 I (php_switch.h)(0x61223673)
 F (.\dev_glcd.c)(0x61E29FDC)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\dev_glcd.o --omf_browse .\objects\dev_glcd.crf --depend .\objects\dev_glcd.d)
@@ -57,7 +57,7 @@ I (.\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
 I (php.h)(0x617303FA)
 I (php_timer.h)(0x61A298DA)
 I (php_gpio.h)(0x61C9FCE0)
-I (misc.h)(0x6210E0E1)
+I (misc.h)(0x62656311)
 I (php_spi.h)(0x6206464B)
 F (.\dev_mpu.c)(0x6150D7A0)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\dev_mpu.o --omf_browse .\objects\dev_mpu.crf --depend .\objects\dev_mpu.d)
 I (dev_mpu.h)(0x6145E577)
@@ -72,7 +72,7 @@ I (.\Include\core_cmSimd.h)(0x562F594A)
 I (.\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
 I (php.h)(0x617303FA)
 I (php_timer.h)(0x61A298DA)
-I (misc.h)(0x6210E0E1)
+I (misc.h)(0x62656311)
 I (php_uart.h)(0x612AABBF)
 F (.\dev_servomotor.c)(0x61ACEE03)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\dev_servomotor.o --omf_browse .\objects\dev_servomotor.crf --depend .\objects\dev_servomotor.d)
 I (dev_servomotor.h)(0x61B62065)
@@ -86,7 +86,7 @@ I (.\Include\core_cmSimd.h)(0x562F594A)
 I (.\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
 I (php.h)(0x617303FA)
 I (php_timer.h)(0x61A298DA)
-I (misc.h)(0x6210E0E1)
+I (misc.h)(0x62656311)
 I (php_pwm.h)(0x61ABBC49)
 F (.\dev_steppermotor.c)(0x61B62802)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\dev_steppermotor.o --omf_browse .\objects\dev_steppermotor.crf --depend .\objects\dev_steppermotor.d)
 I (dev_steppermotor.h)(0x61B61B68)
@@ -100,8 +100,8 @@ I (.\Include\core_cmSimd.h)(0x562F594A)
 I (.\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
 I (php.h)(0x617303FA)
 I (php_timer.h)(0x61A298DA)
-I (misc.h)(0x6210E0E1)
-F (.\main.c)(0x6204CB82)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (misc.h)(0x62656311)
+F (.\main.c)(0x62654264)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
 I (bsp.h)(0x6204CB82)
 I (TM4C123GH6PM.h)(0x61743C05)
@@ -120,7 +120,7 @@ I (php_led.h)(0x61740F40)
 I (php_switch.h)(0x61223673)
 I (php_adc.h)(0x613C95D4)
 I (php_spi.h)(0x6206464B)
-I (misc.h)(0x6210E0E1)
+I (misc.h)(0x62656311)
 I (php_i2c.h)(0x6150522E)
 I (php_pwm.h)(0x61ABBC49)
 I (dev_mpu.h)(0x6145E577)
@@ -129,9 +129,9 @@ I (dev_servomotor.h)(0x61B62065)
 I (dev_buzzer.h)(0x61A7ED6E)
 I (dev_glcd.h)(0x61B61DEE)
 I (php_gpio.h)(0x61C9FCE0)
-I (dev_rfid.h)(0x621259B0)
-F (.\misc.c)(0x6210E0E1)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
-I (misc.h)(0x6210E0E1)
+I (dev_rfid.h)(0x6265A29D)
+F (.\misc.c)(0x62659A7F)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
+I (misc.h)(0x62656311)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
 F (.\php.c)(0x6174028D)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\php.o --omf_browse .\objects\php.crf --depend .\objects\php.d)
 I (php.h)(0x617303FA)
@@ -168,7 +168,7 @@ I (.\Include\core_cmSimd.h)(0x562F594A)
 I (.\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
 I (php.h)(0x617303FA)
 I (php_timer.h)(0x61A298DA)
-I (misc.h)(0x6210E0E1)
+I (misc.h)(0x62656311)
 F (.\php_i2c.c)(0x61B6351A)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\php_i2c.o --omf_browse .\objects\php_i2c.crf --depend .\objects\php_i2c.d)
 I (php_i2c.h)(0x6150522E)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
@@ -181,7 +181,7 @@ I (.\Include\core_cmSimd.h)(0x562F594A)
 I (.\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
 I (php.h)(0x617303FA)
 I (php_timer.h)(0x61A298DA)
-I (misc.h)(0x6210E0E1)
+I (misc.h)(0x62656311)
 F (.\php_keypad.c)(0x6113A633)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\php_keypad.o --omf_browse .\objects\php_keypad.crf --depend .\objects\php_keypad.d)
 I (php_keypad.h)(0x611280A0)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
@@ -206,7 +206,7 @@ I (.\Include\core_cmSimd.h)(0x562F594A)
 I (.\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
 I (php.h)(0x617303FA)
 I (php_timer.h)(0x61A298DA)
-F (.\php_led.c)(0x61C9FCE0)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\php_led.o --omf_browse .\objects\php_led.crf --depend .\objects\php_led.d)
+F (.\php_led.c)(0x6264470A)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\php_led.o --omf_browse .\objects\php_led.crf --depend .\objects\php_led.d)
 I (php_led.h)(0x61740F40)
 I (TM4C123GH6PM.h)(0x61743C05)
 I (core_cm4.h)(0x562F594A)
@@ -230,7 +230,7 @@ I (.\Include\core_cmSimd.h)(0x562F594A)
 I (.\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
 I (php.h)(0x617303FA)
 I (php_timer.h)(0x61A298DA)
-F (.\php_spi.c)(0x62068B76)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\php_spi.o --omf_browse .\objects\php_spi.crf --depend .\objects\php_spi.d)
+F (.\php_spi.c)(0x625D4FBF)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\php_spi.o --omf_browse .\objects\php_spi.crf --depend .\objects\php_spi.d)
 I (php_spi.h)(0x6206464B)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
 I (TM4C123GH6PM.h)(0x61743C05)
@@ -242,7 +242,7 @@ I (.\Include\core_cmSimd.h)(0x562F594A)
 I (.\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
 I (php.h)(0x617303FA)
 I (php_timer.h)(0x61A298DA)
-I (misc.h)(0x6210E0E1)
+I (misc.h)(0x62656311)
 F (.\php_switch.c)(0x61B6267F)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\php_switch.o --omf_browse .\objects\php_switch.crf --depend .\objects\php_switch.d)
 I (php_switch.h)(0x61223673)
 I (TM4C123GH6PM.h)(0x61743C05)
@@ -285,7 +285,7 @@ F (.\dev_glcd.h)(0x61B61DEE)()
 F (.\dev_mpu.h)(0x6145E577)()
 F (.\dev_servomotor.h)(0x61B62065)()
 F (.\dev_steppermotor.h)(0x61B61B68)()
-F (.\misc.h)(0x6210E0E1)()
+F (.\misc.h)(0x62656311)()
 F (.\php.h)(0x617303FA)()
 F (.\php_adc.h)(0x613C95D4)()
 F (.\php_gpio.h)(0x61C9FCE0)()
@@ -300,9 +300,9 @@ F (.\php_timer.h)(0x61A298DA)()
 F (.\php_uart.h)(0x612AABBF)()
 F (.\tm4c_cmsis.h)(0x60C5E449)()
 F (.\TM4C123GH6PM.h)(0x61743C05)()
-F (.\dev_rfid.h)(0x621259B0)()
-F (.\dev_rfid.c)(0x621259E5)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\dev_rfid.o --omf_browse .\objects\dev_rfid.crf --depend .\objects\dev_rfid.d)
-I (dev_rfid.h)(0x621259B0)
+F (.\dev_rfid.h)(0x6265A29D)()
+F (.\dev_rfid.c)(0x6265A2DD)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Include -I .\ek-tm4c123gxl -I .\Include -I .\ek-tm4c123gxl -I .\CMSIS\Include-I.\RTE\_php_dev-ID:\Users\chime\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Users\chime\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="533" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o .\objects\dev_rfid.o --omf_browse .\objects\dev_rfid.crf --depend .\objects\dev_rfid.d)
+I (dev_rfid.h)(0x6265A29D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
 I (TM4C123GH6PM.h)(0x61743C05)
 I (core_cm4.h)(0x562F594A)
@@ -314,7 +314,7 @@ I (.\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x5A5E339C)
 I (php.h)(0x617303FA)
 I (php_timer.h)(0x61A298DA)
 I (php_gpio.h)(0x61C9FCE0)
-I (misc.h)(0x6210E0E1)
+I (misc.h)(0x62656311)
 I (php_spi.h)(0x6206464B)
 I (php_uart.h)(0x612AABBF)
 I (php_led.h)(0x61740F40)

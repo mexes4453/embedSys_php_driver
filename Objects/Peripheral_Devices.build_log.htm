@@ -27,67 +27,19 @@ Project File Date:  01/12/2022
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Program Files\Keil_v5\ARM\ARMCC\Bin'
 Build target 'php_dev'
-compiling main.c...
-compiling dev_glcd.c...
-compiling dev_mpu.c...
-dev_mpu.c(15): warning:  #550-D: variable "Error"  was set but never used
-      char Error;
-dev_mpu.c: 1 warning, 0 errors
-compiling bsp.c...
-bsp.c(424): warning:  #550-D: variable "RFID_SRC"  was set but never used
-      enum RFID_StatusCode RFID_SRC;
-bsp.c: 1 warning, 0 errors
-compiling dev_steppermotor.c...
-compiling dev_buzzer.c...
-compiling dev_servomotor.c...
-compiling misc.c...
-compiling php.c...
-compiling php_keypad.c...
-compiling php_gpio.c...
-php_gpio.c(27): warning:  #550-D: variable "delay"  was set but never used
-      uint32_t delay=0;
-php_gpio.c: 1 warning, 0 errors
-compiling php_lcd.c...
-compiling php_i2c.c...
-compiling php_adc.c...
-compiling php_led.c...
-php_led.c(11): warning:  #550-D: variable "delay"  was set but never used
-  	  uint32_t delay=0;
-php_led.c: 1 warning, 0 errors
-compiling php_timer.c...
-php_timer.c(106): warning:  #550-D: variable "delay"  was set but never used
-  	  uint32_t delay;
-php_timer.c: 1 warning, 0 errors
-compiling php_uart.c...
-compiling php_spi.c...
-php_spi.c(47): warning:  #550-D: variable "delay"  was set but never used
-  	uint32_t delay = 0;
-php_spi.c(198): warning:  #940-D: missing return statement at end of non-void function "PHP_SPI_SSI_RegBurstWrite" 
-  }
-php_spi.c(167): warning:  #550-D: variable "dataRx"  was set but never used
-  	  uint8_t idx, dataRx;
-php_spi.c(252): warning:  #550-D: variable "dataRx"  was set but never used
-  	  uint8_t dataRx;
-php_spi.c: 4 warnings, 0 errors
-assembling startup_TM4C123.s...
-compiling php_pwm.c...
 compiling dev_rfid.c...
 dev_rfid.c(248): warning:  #177-D: variable "i"  was declared but never referenced
   	unsigned int i;
-dev_rfid.c(375): warning:  #188-D: enumerated type mixed with another type
-  	return RFID_PCDCommunicateWithPICC(RFID_PCD_CMD_Transceive, waitIRq, sendData, sendLen, backData, backLen, validBits, rxAlign, checkCRC);
 dev_rfid.c(468): warning:  #177-D: variable "loopCount"  was declared but never referenced
   	uint8_t loopCount=0;
 dev_rfid.c(470): warning:  #177-D: variable "uidIndex"  was declared but never referenced
   	uint8_t uidIndex;					      // The first index in uid->uidByte[] that is used in the current Cascade Level.
 dev_rfid.c(471): warning:  #177-D: variable "currentLevelKnownBits"  was declared but never referenced
   	uint8_t currentLevelKnownBits;	// The number of known UID bits in the current Cascade Level.
-dev_rfid.c: 5 warnings, 0 errors
-compiling php_switch.c...
-compiling system_TM4C123.c...
+dev_rfid.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=3620 RO-data=660 RW-data=12 ZI-data=612  
-".\Objects\Peripheral_Devices.axf" - 0 Error(s), 14 Warning(s).
+Program Size: Code=5020 RO-data=660 RW-data=12 ZI-data=620  
+".\Objects\Peripheral_Devices.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -113,10 +65,10 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: Keil::Device:Startup:1.0.1
-      Source file:   Device\Source\ARM\startup_TM4C123.s
-      Source file:   Device\Source\system_TM4C123.c
       Include file:  Device\Include\TM4C123\TM4C123.h
-Build Time Elapsed:  00:00:04
+      Source file:   Device\Source\system_TM4C123.c
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

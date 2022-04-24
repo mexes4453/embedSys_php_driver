@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Objects\Peripheral_Devices.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Peripheral_Devices.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sat Mar 12 17:19:21 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Apr 24 21:19:58 2022
 <BR><P>
-<H3>Maximum Stack Usage =        432 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        448 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 __rt_entry_main &rArr; main &rArr; BSP_RFID_TestRegisters &rArr; DEV_RFID_PICC_Select &rArr; DEV_RFID_SendSelect &rArr; DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 <P>
@@ -277,9 +277,9 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
-<P><STRONG><a name="[b1]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[be]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[b2]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[bf]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
 <P><STRONG><a name="[80]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
@@ -287,80 +287,80 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
 </UL>
 
-<P><STRONG><a name="[b3]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+<P><STRONG><a name="[c0]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
 <P><STRONG><a name="[84]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
 </UL>
 
-<P><STRONG><a name="[b4]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+<P><STRONG><a name="[c1]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
 
-<P><STRONG><a name="[b5]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+<P><STRONG><a name="[c2]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
 
-<P><STRONG><a name="[b6]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+<P><STRONG><a name="[c3]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
 
-<P><STRONG><a name="[b7]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+<P><STRONG><a name="[c4]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
 
-<P><STRONG><a name="[b8]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+<P><STRONG><a name="[c5]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
 
-<P><STRONG><a name="[b9]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+<P><STRONG><a name="[c6]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
 
-<P><STRONG><a name="[ba]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
+<P><STRONG><a name="[c7]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
 
-<P><STRONG><a name="[bb]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+<P><STRONG><a name="[c8]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
 
-<P><STRONG><a name="[bc]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+<P><STRONG><a name="[c9]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
 
-<P><STRONG><a name="[bd]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+<P><STRONG><a name="[ca]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
 
-<P><STRONG><a name="[be]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+<P><STRONG><a name="[cb]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
 
-<P><STRONG><a name="[bf]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+<P><STRONG><a name="[cc]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
 
-<P><STRONG><a name="[c0]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+<P><STRONG><a name="[cd]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
 
-<P><STRONG><a name="[c1]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+<P><STRONG><a name="[ce]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
 
-<P><STRONG><a name="[c2]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+<P><STRONG><a name="[cf]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
 
-<P><STRONG><a name="[c3]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+<P><STRONG><a name="[d0]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
 
-<P><STRONG><a name="[c4]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+<P><STRONG><a name="[d1]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
 
-<P><STRONG><a name="[c5]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+<P><STRONG><a name="[d2]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
 
-<P><STRONG><a name="[c6]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+<P><STRONG><a name="[d3]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
 
-<P><STRONG><a name="[c7]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+<P><STRONG><a name="[d4]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
 
-<P><STRONG><a name="[c8]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+<P><STRONG><a name="[d5]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
 
 <P><STRONG><a name="[89]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
 </UL>
 
-<P><STRONG><a name="[c9]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+<P><STRONG><a name="[d6]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
 
-<P><STRONG><a name="[ca]"></a>__rt_lib_shutdown_fini_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+<P><STRONG><a name="[d7]"></a>__rt_lib_shutdown_fini_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
 
-<P><STRONG><a name="[cb]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+<P><STRONG><a name="[d8]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
 
-<P><STRONG><a name="[cc]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000011))
+<P><STRONG><a name="[d9]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000011))
 
-<P><STRONG><a name="[cd]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000012))
+<P><STRONG><a name="[da]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000012))
 
-<P><STRONG><a name="[ce]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+<P><STRONG><a name="[db]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
-<P><STRONG><a name="[cf]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+<P><STRONG><a name="[dc]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
 
-<P><STRONG><a name="[d0]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+<P><STRONG><a name="[dd]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
 
 <P><STRONG><a name="[7e]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 </UL>
 
-<P><STRONG><a name="[d1]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+<P><STRONG><a name="[de]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
 
 <P><STRONG><a name="[81]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -373,17 +373,17 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
 </UL>
 
-<P><STRONG><a name="[d2]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+<P><STRONG><a name="[df]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[85]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 432 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 448 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; BSP_RFID_TestRegisters &rArr; DEV_RFID_PICC_Select &rArr; DEV_RFID_SendSelect &rArr; DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
 <BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[d3]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+<P><STRONG><a name="[e0]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
 <P><STRONG><a name="[8d]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -393,7 +393,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
 
-<P><STRONG><a name="[d4]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+<P><STRONG><a name="[e1]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
 
 <P><STRONG><a name="[8a]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
@@ -1224,11 +1224,11 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[d5]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[e2]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[d6]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[e3]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[d7]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[e4]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
 <P><STRONG><a name="[82]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -1249,142 +1249,169 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[d8]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[e5]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[8c]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[d9]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[e6]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[8b]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
 </UL>
 
-<P><STRONG><a name="[da]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[e7]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[db]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[e8]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[dc]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+<P><STRONG><a name="[e9]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[8e]"></a>BSP_RFID_TestRegisters</STRONG> (Thumb, 58 bytes, Stack size 48 bytes, bsp.o(i.BSP_RFID_TestRegisters))
-<BR><BR>[Stack]<UL><LI>Max Depth = 432<LI>Call Chain = BSP_RFID_TestRegisters &rArr; DEV_RFID_PICC_Select &rArr; DEV_RFID_SendSelect &rArr; DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
+<P><STRONG><a name="[8e]"></a>BSP_RFID_TestRegisters</STRONG> (Thumb, 142 bytes, Stack size 64 bytes, bsp.o(i.BSP_RFID_TestRegisters))
+<BR><BR>[Stack]<UL><LI>Max Depth = 448<LI>Call Chain = BSP_RFID_TestRegisters &rArr; DEV_RFID_PICC_Select &rArr; DEV_RFID_SendSelect &rArr; DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteRead
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_SRC_LEDStatus
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteRead
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PrintBlockAddrData
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PiccUidInit
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_RequestA
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Read
 </UL>
 <BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[93]"></a>BSP_init</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, bsp.o(i.BSP_init))
+<P><STRONG><a name="[97]"></a>BSP_init</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, bsp.o(i.BSP_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = BSP_init &rArr; DEV_RFID_Init &rArr; DEV_RFID_SwitchOnAntenna &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SysClock_InitFastest
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_LED_Init
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_UART0_Init
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SysClock_InitFastest
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_LED_Init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[aa]"></a>DEV_RFID_CheckSak</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_CheckSak))
+<P><STRONG><a name="[af]"></a>DEV_RFID_CheckSak</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_CheckSak))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DEV_RFID_CheckSak
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
 </UL>
 
-<P><STRONG><a name="[97]"></a>DEV_RFID_FifoRegBurstRead</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_FifoRegBurstRead))
+<P><STRONG><a name="[9c]"></a>DEV_RFID_FifoRegBurstRead</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_FifoRegBurstRead))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = DEV_RFID_FifoRegBurstRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteRead
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
 </UL>
 
-<P><STRONG><a name="[99]"></a>DEV_RFID_FifoRegBurstWrite</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_FifoRegBurstWrite))
+<P><STRONG><a name="[9e]"></a>DEV_RFID_FifoRegBurstWrite</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_FifoRegBurstWrite))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = DEV_RFID_FifoRegBurstWrite &rArr; PHP_SPI_SSI_RegByteWrite &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteWrite
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
 </UL>
 
-<P><STRONG><a name="[96]"></a>DEV_RFID_Init</STRONG> (Thumb, 120 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_Init))
+<P><STRONG><a name="[9b]"></a>DEV_RFID_Init</STRONG> (Thumb, 120 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = DEV_RFID_Init &rArr; DEV_RFID_SwitchOnAntenna &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_Init
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_GPIO_Init
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SwitchOnAntenna
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_Init
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_GPIO_Init
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SwitchOnAntenna
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
 </UL>
 
-<P><STRONG><a name="[a0]"></a>DEV_RFID_IsUidComplete</STRONG> (Thumb, 186 bytes, Stack size 32 bytes, dev_rfid.o(i.DEV_RFID_IsUidComplete))
+<P><STRONG><a name="[a4]"></a>DEV_RFID_IsUidComplete</STRONG> (Thumb, 190 bytes, Stack size 32 bytes, dev_rfid.o(i.DEV_RFID_IsUidComplete))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DEV_RFID_IsUidComplete
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_MEM_Copy
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_MEM_Copy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
 </UL>
 
-<P><STRONG><a name="[a2]"></a>DEV_RFID_PCD_CalculateCRC</STRONG> (Thumb, 132 bytes, Stack size 32 bytes, dev_rfid.o(i.DEV_RFID_PCD_CalculateCRC))
+<P><STRONG><a name="[a6]"></a>DEV_RFID_PCD_AuthenticateSector</STRONG> (Thumb, 78 bytes, Stack size 56 bytes, dev_rfid.o(i.DEV_RFID_PCD_AuthenticateSector))
+<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = DEV_RFID_PCD_AuthenticateSector &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_MEM_Copy
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Read
+</UL>
+
+<P><STRONG><a name="[a8]"></a>DEV_RFID_PCD_CalculateCRC</STRONG> (Thumb, 132 bytes, Stack size 32 bytes, dev_rfid.o(i.DEV_RFID_PCD_CalculateCRC))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteRead
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegSetBitMask
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_FifoRegBurstWrite
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegSetBitMask
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_FifoRegBurstWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SendSelect
-</UL>
-
-<P><STRONG><a name="[a8]"></a>DEV_RFID_PCD_PICC_SelectCascadeLevel</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, dev_rfid.o(i.DEV_RFID_PCD_PICC_SelectCascadeLevel))
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Read
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SendSelect
 </UL>
 
-<P><STRONG><a name="[a4]"></a>DEV_RFID_PCD_TransceiveData</STRONG> (Thumb, 50 bytes, Stack size 56 bytes, dev_rfid.o(i.DEV_RFID_PCD_TransceiveData))
+<P><STRONG><a name="[ad]"></a>DEV_RFID_PCD_PICC_SelectCascadeLevel</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, dev_rfid.o(i.DEV_RFID_PCD_PICC_SelectCascadeLevel))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
+</UL>
+
+<P><STRONG><a name="[aa]"></a>DEV_RFID_PCD_TransceiveData</STRONG> (Thumb, 48 bytes, Stack size 56 bytes, dev_rfid.o(i.DEV_RFID_PCD_TransceiveData))
 <BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SendSelect
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_REQA_or_WUPA
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Read
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SendSelect
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_REQA_or_WUPA
 </UL>
 
-<P><STRONG><a name="[a6]"></a>DEV_RFID_PICC_REQA_or_WUPA</STRONG> (Thumb, 84 bytes, Stack size 48 bytes, dev_rfid.o(i.DEV_RFID_PICC_REQA_or_WUPA))
+<P><STRONG><a name="[ab]"></a>DEV_RFID_PICC_REQA_or_WUPA</STRONG> (Thumb, 84 bytes, Stack size 48 bytes, dev_rfid.o(i.DEV_RFID_PICC_REQA_or_WUPA))
 <BR><BR>[Stack]<UL><LI>Max Depth = 312<LI>Call Chain = DEV_RFID_PICC_REQA_or_WUPA &rArr; DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegClearBitMask
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_TransceiveData
+<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegClearBitMask
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_TransceiveData
 </UL>
 <BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_RequestA
+</UL>
+
+<P><STRONG><a name="[95]"></a>DEV_RFID_PICC_Read</STRONG> (Thumb, 104 bytes, Stack size 32 bytes, dev_rfid.o(i.DEV_RFID_PICC_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 296<LI>Call Chain = DEV_RFID_PICC_Read &rArr; DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_TransceiveData
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_AuthenticateSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_RFID_TestRegisters
 </UL>
 
 <P><STRONG><a name="[91]"></a>DEV_RFID_PICC_RequestA</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_PICC_RequestA))
 <BR><BR>[Stack]<UL><LI>Max Depth = 328<LI>Call Chain = DEV_RFID_PICC_RequestA &rArr; DEV_RFID_PICC_REQA_or_WUPA &rArr; DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_REQA_or_WUPA
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_REQA_or_WUPA
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_RFID_TestRegisters
 </UL>
 
-<P><STRONG><a name="[92]"></a>DEV_RFID_PICC_Select</STRONG> (Thumb, 184 bytes, Stack size 80 bytes, dev_rfid.o(i.DEV_RFID_PICC_Select))
+<P><STRONG><a name="[93]"></a>DEV_RFID_PICC_Select</STRONG> (Thumb, 194 bytes, Stack size 80 bytes, dev_rfid.o(i.DEV_RFID_PICC_Select))
 <BR><BR>[Stack]<UL><LI>Max Depth = 384<LI>Call Chain = DEV_RFID_PICC_Select &rArr; DEV_RFID_SendSelect &rArr; DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteRead
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SendSelect
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegClearBitMask
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_TransceiveData
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_PICC_SelectCascadeLevel
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_IsUidComplete
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_CheckSak
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SendSelect
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegClearBitMask
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_ProcessUID
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_TransceiveData
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_PICC_SelectCascadeLevel
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_IsUidComplete
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_CheckSak
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_RFID_TestRegisters
 </UL>
@@ -1395,180 +1422,271 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_RFID_TestRegisters
 </UL>
 
+<P><STRONG><a name="[96]"></a>DEV_RFID_PrintBlockAddrData</STRONG> (Thumb, 240 bytes, Stack size 32 bytes, dev_rfid.o(i.DEV_RFID_PrintBlockAddrData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = DEV_RFID_PrintBlockAddrData &rArr; MISC_Nbr2CharStr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_StrLen
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_Nbr2CharStr
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_UART_TxString
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PrintSectorHeader
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_UART_Tx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_RFID_TestRegisters
+</UL>
+
+<P><STRONG><a name="[b2]"></a>DEV_RFID_PrintSectorHeader</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, dev_rfid.o(i.DEV_RFID_PrintSectorHeader))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DEV_RFID_PrintSectorHeader &rArr; PHP_UART_TxString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_UART_TxString
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PrintBlockAddrData
+</UL>
+
+<P><STRONG><a name="[b0]"></a>DEV_RFID_ProcessUID</STRONG> (Thumb, 144 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_ProcessUID))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DEV_RFID_ProcessUID
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
+</UL>
+
 <P><STRONG><a name="[90]"></a>DEV_RFID_RegByteRead</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_RegByteRead))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteRead
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_RFID_TestRegisters
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegSetBitMask
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegClearBitMask
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegSetBitMask
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegClearBitMask
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
 </UL>
 
-<P><STRONG><a name="[9e]"></a>DEV_RFID_RegByteWrite</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_RegByteWrite))
+<P><STRONG><a name="[a2]"></a>DEV_RFID_RegByteWrite</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_RegByteWrite))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = DEV_RFID_RegByteWrite &rArr; PHP_SPI_SSI_RegByteWrite &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteWrite
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegSetBitMask
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegClearBitMask
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegSetBitMask
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegClearBitMask
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
 </UL>
 
-<P><STRONG><a name="[a7]"></a>DEV_RFID_RegClearBitMask</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_RegClearBitMask))
+<P><STRONG><a name="[ac]"></a>DEV_RFID_RegClearBitMask</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_RegClearBitMask))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = DEV_RFID_RegClearBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteRead
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_REQA_or_WUPA
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_REQA_or_WUPA
 </UL>
 
-<P><STRONG><a name="[a3]"></a>DEV_RFID_RegSetBitMask</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_RegSetBitMask))
+<P><STRONG><a name="[a9]"></a>DEV_RFID_RegSetBitMask</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, dev_rfid.o(i.DEV_RFID_RegSetBitMask))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteRead
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SwitchOnAntenna
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_PCDCommunicateWithPICC
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SwitchOnAntenna
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
 </UL>
 
-<P><STRONG><a name="[a9]"></a>DEV_RFID_SendSelect</STRONG> (Thumb, 92 bytes, Stack size 40 bytes, dev_rfid.o(i.DEV_RFID_SendSelect))
+<P><STRONG><a name="[ae]"></a>DEV_RFID_SendSelect</STRONG> (Thumb, 92 bytes, Stack size 40 bytes, dev_rfid.o(i.DEV_RFID_SendSelect))
 <BR><BR>[Stack]<UL><LI>Max Depth = 304<LI>Call Chain = DEV_RFID_SendSelect &rArr; DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_MEM_Move
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_TransceiveData
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_MEM_Move
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_TransceiveData
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PICC_Select
 </UL>
 
-<P><STRONG><a name="[9f]"></a>DEV_RFID_SwitchOnAntenna</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, dev_rfid.o(i.DEV_RFID_SwitchOnAntenna))
+<P><STRONG><a name="[a3]"></a>DEV_RFID_SwitchOnAntenna</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, dev_rfid.o(i.DEV_RFID_SwitchOnAntenna))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = DEV_RFID_SwitchOnAntenna &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegSetBitMask
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegSetBitMask
 </UL>
-<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
 </UL>
 
-<P><STRONG><a name="[ac]"></a>MISC_DivByFloat</STRONG> (Thumb, 54 bytes, Stack size 28 bytes, misc.o(i.MISC_DivByFloat))
+<P><STRONG><a name="[b7]"></a>MISC_DivByFloat</STRONG> (Thumb, 54 bytes, Stack size 28 bytes, misc.o(i.MISC_DivByFloat))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = MISC_DivByFloat
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_MyPow
+<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_MyPow
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSInClk_Configure
-</UL>
-
-<P><STRONG><a name="[a1]"></a>MISC_MEM_Copy</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, misc.o(i.MISC_MEM_Copy))
-<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_IsUidComplete
+<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSInClk_Configure
 </UL>
 
-<P><STRONG><a name="[ab]"></a>MISC_MEM_Move</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, misc.o(i.MISC_MEM_Move))
-<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SendSelect
+<P><STRONG><a name="[a5]"></a>MISC_MEM_Copy</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, misc.o(i.MISC_MEM_Copy))
+<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_AuthenticateSector
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_IsUidComplete
 </UL>
 
-<P><STRONG><a name="[ad]"></a>MISC_MyPow</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, misc.o(i.MISC_MyPow))
-<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_DivByFloat
+<P><STRONG><a name="[b6]"></a>MISC_MEM_Move</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, misc.o(i.MISC_MEM_Move))
+<BR><BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_SendSelect
 </UL>
 
-<P><STRONG><a name="[9d]"></a>PHP_DelayMs</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, php.o(i.PHP_DelayMs))
+<P><STRONG><a name="[b8]"></a>MISC_MyPow</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, misc.o(i.MISC_MyPow))
+<BR><BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_DivByFloat
+</UL>
+
+<P><STRONG><a name="[b3]"></a>MISC_Nbr2CharStr</STRONG> (Thumb, 94 bytes, Stack size 48 bytes, misc.o(i.MISC_Nbr2CharStr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = MISC_Nbr2CharStr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PrintBlockAddrData
+</UL>
+
+<P><STRONG><a name="[b5]"></a>MISC_StrLen</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, misc.o(i.MISC_StrLen))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PrintBlockAddrData
+</UL>
+
+<P><STRONG><a name="[92]"></a>PHP_DelayMs</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, php.o(i.PHP_DelayMs))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteWrite
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteRead
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_LED_Toggle_Red
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_LED_Toggle_Green
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_UART0_Init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_RFID_TestRegisters
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteWrite
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_RegByteRead
 </UL>
 
-<P><STRONG><a name="[9c]"></a>PHP_GPIO_Init</STRONG> (Thumb, 160 bytes, Stack size 20 bytes, php_gpio.o(i.PHP_GPIO_Init))
+<P><STRONG><a name="[a1]"></a>PHP_GPIO_Init</STRONG> (Thumb, 160 bytes, Stack size 20 bytes, php_gpio.o(i.PHP_GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = PHP_GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
 </UL>
 
-<P><STRONG><a name="[95]"></a>PHP_LED_Init</STRONG> (Thumb, 78 bytes, Stack size 0 bytes, php_led.o(i.PHP_LED_Init))
-<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
+<P><STRONG><a name="[9a]"></a>PHP_LED_Init</STRONG> (Thumb, 78 bytes, Stack size 0 bytes, php_led.o(i.PHP_LED_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
 </UL>
 
-<P><STRONG><a name="[9b]"></a>PHP_SPI_SSI_Init</STRONG> (Thumb, 286 bytes, Stack size 48 bytes, php_spi.o(i.PHP_SPI_SSI_Init))
+<P><STRONG><a name="[ba]"></a>PHP_LED_Toggle_Green</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, php_led.o(i.PHP_LED_Toggle_Green))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = PHP_LED_Toggle_Green &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
+</UL>
+<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_SRC_LEDStatus
+</UL>
+
+<P><STRONG><a name="[bb]"></a>PHP_LED_Toggle_Red</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, php_led.o(i.PHP_LED_Toggle_Red))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = PHP_LED_Toggle_Red &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
+</UL>
+<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RFID_SRC_LEDStatus
+</UL>
+
+<P><STRONG><a name="[a0]"></a>PHP_SPI_SSI_Init</STRONG> (Thumb, 286 bytes, Stack size 48 bytes, php_spi.o(i.PHP_SPI_SSI_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = PHP_SPI_SSI_Init &rArr; PHP_SPI_SSInClk_Configure &rArr; MISC_DivByFloat
 </UL>
-<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SysClock_GetFreq
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSInClk_Configure
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SysClock_GetFreq
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSInClk_Configure
 </UL>
-<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_Init
 </UL>
 
-<P><STRONG><a name="[98]"></a>PHP_SPI_SSI_RegByteRead</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, php_spi.o(i.PHP_SPI_SSI_RegByteRead))
+<P><STRONG><a name="[9d]"></a>PHP_SPI_SSI_RegByteRead</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, php_spi.o(i.PHP_SPI_SSI_RegByteRead))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
 </UL>
 <BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteRead
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_FifoRegBurstRead
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_FifoRegBurstRead
 </UL>
 
-<P><STRONG><a name="[9a]"></a>PHP_SPI_SSI_RegByteWrite</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, php_spi.o(i.PHP_SPI_SSI_RegByteWrite))
+<P><STRONG><a name="[9f]"></a>PHP_SPI_SSI_RegByteWrite</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, php_spi.o(i.PHP_SPI_SSI_RegByteWrite))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = PHP_SPI_SSI_RegByteWrite &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_FifoRegBurstWrite
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_FifoRegBurstWrite
 </UL>
 
-<P><STRONG><a name="[b0]"></a>PHP_SPI_SSInClk_Configure</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, php_spi.o(i.PHP_SPI_SSInClk_Configure))
+<P><STRONG><a name="[bd]"></a>PHP_SPI_SSInClk_Configure</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, php_spi.o(i.PHP_SPI_SSInClk_Configure))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = PHP_SPI_SSInClk_Configure &rArr; MISC_DivByFloat
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_DivByFloat
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MISC_DivByFloat
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_Init
-</UL>
-
-<P><STRONG><a name="[af]"></a>PHP_SysClock_GetFreq</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, php.o(i.PHP_SysClock_GetFreq))
-<BR><BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_Init
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_Init
 </UL>
 
-<P><STRONG><a name="[94]"></a>PHP_SysClock_InitFastest</STRONG> (Thumb, 130 bytes, Stack size 0 bytes, php.o(i.PHP_SysClock_InitFastest))
-<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
+<P><STRONG><a name="[bc]"></a>PHP_SysClock_GetFreq</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, php.o(i.PHP_SysClock_GetFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SPI_SSI_Init
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_UART0_Init
 </UL>
 
-<P><STRONG><a name="[ae]"></a>PHP_TIMER_A_PeriodicMode_Delay_Us_Ms</STRONG> (Thumb, 156 bytes, Stack size 40 bytes, php_timer.o(i.PHP_TIMER_A_PeriodicMode_Delay_Us_Ms))
+<P><STRONG><a name="[98]"></a>PHP_SysClock_InitFastest</STRONG> (Thumb, 130 bytes, Stack size 0 bytes, php.o(i.PHP_SysClock_InitFastest))
+<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
+</UL>
+
+<P><STRONG><a name="[b9]"></a>PHP_TIMER_A_PeriodicMode_Delay_Us_Ms</STRONG> (Thumb, 156 bytes, Stack size 40 bytes, php_timer.o(i.PHP_TIMER_A_PeriodicMode_Delay_Us_Ms))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SysClock_GetFreq
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SysClock_GetFreq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
 </UL>
 
-<P><STRONG><a name="[a5]"></a>RFID_PCDCommunicateWithPICC</STRONG> (Thumb, 378 bytes, Stack size 80 bytes, dev_rfid.o(i.RFID_PCDCommunicateWithPICC))
+<P><STRONG><a name="[99]"></a>PHP_UART0_Init</STRONG> (Thumb, 216 bytes, Stack size 24 bytes, php_uart.o(i.PHP_UART0_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = PHP_UART0_Init &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_SysClock_GetFreq
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_DelayMs
+</UL>
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
+</UL>
+
+<P><STRONG><a name="[b4]"></a>PHP_UART_Tx</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, php_uart.o(i.PHP_UART_Tx))
+<BR><BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_UART_TxString
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PrintBlockAddrData
+</UL>
+
+<P><STRONG><a name="[b1]"></a>PHP_UART_TxString</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, php_uart.o(i.PHP_UART_TxString))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PHP_UART_TxString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_UART_Tx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PrintBlockAddrData
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PrintSectorHeader
+</UL>
+
+<P><STRONG><a name="[a7]"></a>RFID_PCDCommunicateWithPICC</STRONG> (Thumb, 378 bytes, Stack size 80 bytes, dev_rfid.o(i.RFID_PCDCommunicateWithPICC))
 <BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteRead
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegSetBitMask
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_FifoRegBurstWrite
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_FifoRegBurstRead
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegSetBitMask
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_RegByteWrite
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_CalculateCRC
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_FifoRegBurstWrite
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_FifoRegBurstRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_TransceiveData
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_TransceiveData
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_RFID_PCD_AuthenticateSector
+</UL>
+
+<P><STRONG><a name="[94]"></a>RFID_SRC_LEDStatus</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, dev_rfid.o(i.RFID_SRC_LEDStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = RFID_SRC_LEDStatus &rArr; PHP_LED_Toggle_Red &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_LED_Toggle_Red
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PHP_LED_Toggle_Green
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_RFID_TestRegisters
 </UL>
 
 <P><STRONG><a name="[86]"></a>main</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 432<LI>Call Chain = main &rArr; BSP_RFID_TestRegisters &rArr; DEV_RFID_PICC_Select &rArr; DEV_RFID_SendSelect &rArr; DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
+<BR><BR>[Stack]<UL><LI>Max Depth = 448<LI>Call Chain = main &rArr; BSP_RFID_TestRegisters &rArr; DEV_RFID_PICC_Select &rArr; DEV_RFID_SendSelect &rArr; DEV_RFID_PCD_TransceiveData &rArr; RFID_PCDCommunicateWithPICC &rArr; DEV_RFID_PCD_CalculateCRC &rArr; DEV_RFID_RegSetBitMask &rArr; DEV_RFID_RegByteRead &rArr; PHP_SPI_SSI_RegByteRead &rArr; PHP_DelayMs &rArr; PHP_TIMER_A_PeriodicMode_Delay_Us_Ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_init
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_RFID_TestRegisters
 </UL>
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main

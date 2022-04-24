@@ -84,3 +84,54 @@ void MISC_MEM_Move(uint8_t * dest,       // start address of destination data ar
 		}
 }
 
+void MISC_Nbr2ChrMapping()
+{
+
+}
+char* MISC_Nbr2CharStr(unsigned int nbr, uint8_t base)
+{
+    char map[16] = {'0', '1', '2', '3', 
+			              '4', '5', '6', '7',
+           			    '8', '9',	'A', 'B',
+             		    'C', 'D', 'E', 'F'};
+    static char outBuffer[12];
+    char inBuffer[12];
+    int in_idx = 0, out_idx=0;
+		uint8_t rem = 0;
+
+    do{                               // 6542 -> {'2', '4', '5', '6'}
+			  if (in_idx == 12)							// prevent buffer overflow
+					  return (0);
+				else
+				{
+					rem = nbr % base;
+					inBuffer[in_idx] = map[rem];  // convert to ascii char and store in buffer
+					in_idx++;
+					nbr = nbr / base;
+				}
+
+    }while(nbr);
+
+		// reverse the order of the buffer contents;  6542 -> {'6', '5', '4', '2'}
+    do{
+        in_idx--;
+        outBuffer[out_idx] = inBuffer[in_idx];
+        out_idx++;
+
+    }while(in_idx > 0);
+		outBuffer[out_idx] = '\0';
+
+    return outBuffer;
+}
+
+int MISC_StrLen(char *str)
+{
+		int idx = 0;
+
+		while(*(str + idx) != '\0')
+		{
+				idx++;
+		}
+		return (idx);
+}
+

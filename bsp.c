@@ -8,10 +8,10 @@ void BSP_init() {
 
     PHP_SysClock_InitFastest();                              // Initialise clock to fastest Frequency 80MHz
     //PHP_SysClock_Freq_Test_Init();                           // Initialise port for system clock speed test
-    //PHP_UART0_Init(0, 3);                                    // Port A (enable interrupt, Priority 3)
+    PHP_UART0_Init(0, 3);                                    // Port A (enable interrupt, Priority 3)
 	  //BSP_LCD_Init();                                          // Port B
 	  //PHP_KEYPAD_Init();                                       // Port E & C
-	  PHP_UART1_Init();                                        // Port B
+	  //PHP_UART1_Init();                                        // Port B
 	  PHP_LED_Init();
 	  //PHP_TIMER_SYSTICK_Init(0xFFFFFF);
 	  //PHP_SWITCH_Init();
@@ -425,7 +425,8 @@ void BSP_RFID_TestRegisters(uint8_t *DataPtr){
     enum RFID_StatusCode RFID_SRC;
 	  uint8_t buff_size = 2;
 	  devRfidPiccUid_type rfidPiccUid; // GLOBAL declaration
-    devRfidPiccUidIdSelState_type devRfidPiccUidIdSelState={1,0,0,0,0};
+		uint8_t RFID_CardAuthKey[MF_KEY_SIZE] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,};
+		devRfidPiccUidIdSelState_type devRfidPiccUidIdSelState={1,0,0,0,0};
 /*		 cascadeLevel;
 		   uidIndex;
 		   identDone;
@@ -500,10 +501,29 @@ void BSP_RFID_TestRegisters(uint8_t *DataPtr){
 	 */
 
   	RFID_SRC = DEV_RFID_PICC_RequestA(&DataPtr[0], &buff_size);	// The buffer to store the ATQA (Answer to request) in
-		//RFID_SRC = DEV_RFID_PICC_WakeupA (&DataPtr[0], &buff_size);				                                                                                                                                 BSP_DelayUs(25);
+		//RFID_SRC = DEV_RFID_PICC_WakeupA (&DataPtr[0], &buff_size);		
+		PHP_DelayMs(10); 
     RFID_SRC = DEV_RFID_PICC_Select(&rfidPiccUid,		          // Pointer to Uid struct.
 		                                &devRfidPiccUidIdSelState,
-											              0); // ValidBits = 0               
+											              0); // ValidBits = 0  
+    PHP_DelayMs(10);
+/*		
+		RFID_SRC = DEV_RFID_PCD_AuthenticateSector(RFID_PICC_CMD_MF_AUTH_KEY_A,	// Authentication command code (60h, 61h)
+																							 0,														// block addr
+																							 RFID_CardAuthKey,						// authentication key A
+																							 &rfidPiccUid);								// CARD_UID first 4 bytes needed
+*/																					
+		RFID_SRC_LEDStatus(RFID_SRC);
+		for (int addr = 0; addr < 64; addr++)
+		{
+		    RFID_SRC = DEV_RFID_PICC_Read(addr, &rfidPiccUid, RFID_CardAuthKey);
+		    RFID_SRC = DEV_RFID_PrintBlockAddrData(RFID_SRC, &rfidPiccUid);
+		}
+		if (RFID_SRC != STATUS_OK)
+			  LED_PORT->DATA_Bits[LED_RED] |= LED_RED;          // Turn on LED_RED
+		else
+			  LED_PORT->DATA_Bits[LED_BLUE] |= LED_BLUE;        // Turn on LED_BLUE
+		while(1){}	// stop meaningful operation
 
 
 }
@@ -579,7 +599,6 @@ char* BSP_Int2CharStr(int intVal){
         intVal = intVal/10;
 
     }while(intVal);
-
 
     do{
         in_idx--;

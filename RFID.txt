@@ -29,3 +29,16 @@ byte-13			stores the complement of address stored in byte-12
 byte-14			stores the duplicate of address stored in byte-12
 byte-15			stores the duplicate of addr complement in byte-13
 
+________________
+DISPPLAY PATTERN
+----------------
+sector | block | addr | b0 b1 b2 ... b15 | access | key
+
+_____________
+ACCESS RIGHTS
+-------------
+Note that the sector trailer block for each sector is block 3 or 15
+sectors - 4 blocks - sector trailer is block 3 (zero indexing)
+sectors - 16 blocks - sector trailer is block 15 (zero indexing)
+
+

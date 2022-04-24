@@ -231,7 +231,7 @@ enum RFID_StatusCode DEV_RFID_PCD_CalculateCRC(uint8_t *data,		// In: Pointer to
  *
  * @return STATUS_OK on success, STATUS_??? otherwise.
  */
-int RFID_PCDCommunicateWithPICC(	uint8_t command,		// The command to execute. One of the PCD_Command enums.
+enum RFID_StatusCode RFID_PCDCommunicateWithPICC(	uint8_t command,		// The command to execute. One of the PCD_Command enums.
 																	uint8_t waitIRq,		// The bits in the ComIrqReg register that signals successful completion of the command.
 																	uint8_t *sendData,  // Pointer to the data to transfer to the FIFO.
 																	uint8_t sendLen,		// Number of bytes to transfer to the FIFO.
@@ -536,7 +536,10 @@ enum RFID_StatusCode DEV_RFID_PICC_Select( devRfidPiccUid_type *devRfidPiccUid,	
 			
 			// Check SAK
 			RFID_SRC = DEV_RFID_CheckSak(rxBuffer, &rxByteCount, devRfidPiccUidIdSelState);
-		  /*
+		  
+			// repopulate the uid by remove the cascadetag and bcc bytes
+			RFID_SRC = DEV_RFID_ProcessUID(devRfidPiccUid, devRfidPiccUidIdSelState);
+			/*
 		  buffer[1]=0x70;
 		  buffer[2]=responseBuffer[0];
 		  bufferUsed = 3;
@@ -688,22 +691,19 @@ enum RFID_StatusCode DEV_RFID_PCD_PICC_SelectCascadeLevel(uint8_t *buffer,
 {
 	  // Repeat Cascade Level loop until we have a complete UID.
 		// Set the Cascade Level in the SEL byte, 
-		switch (rfidPiccUidSelState->cascadeLevel) {
+		switch (rfidPiccUidSelState->cascadeLevel)
+		{
 			case 1:
-				buffer[0] = RFID_PICC_CMD_SEL_CL1;
-				break;
-			
+				  buffer[0] = RFID_PICC_CMD_SEL_CL1;
+				  break;
 			case 2:
-				buffer[0] = RFID_PICC_CMD_SEL_CL2;
-				break;
-			
+				  buffer[0] = RFID_PICC_CMD_SEL_CL2;
+				  break;
 			case 3:
-				buffer[0] = RFID_PICC_CMD_SEL_CL3;
-				break;
-			
+				  buffer[0] = RFID_PICC_CMD_SEL_CL3;
+				  break;
 			default:
-				return STATUS_INTERNAL_ERROR;
-				
+				  return STATUS_INTERNAL_ERROR;
 		}		
 		return STATUS_OK;
  
@@ -732,12 +732,13 @@ enum RFID_StatusCode DEV_RFID_IsUidComplete(devRfidPiccUid_type *rfidPiccUid,
 	  uint8_t BCC;
 	  uint8_t uidIdx=0; // Initial value is 0
 
+
+	  uidIdx = rfidPiccUidSelState->uidIndex;                          // update the uidIdx local var
 	  // Copy data from recv buffer to UID data structure
     MISC_MEM_Copy(&(rfidPiccUid->uidByte[uidIdx]),                   // data destination addr
                  	rxBuffer,                                          // data source addr
 	                *rxByteCount);                                     // no of byte to copy
-	
-	  rfidPiccUidSelState->uidIndex += (*rxByteCount);                 // update the uidIndex
+		rfidPiccUidSelState->uidIndex += (*rxByteCount);                 // update the uidIndex
 	  uidIdx = rfidPiccUidSelState->uidIndex;                          // update the uidIdx local var
 	
 		BCC = rxBuffer[0]^ rxBuffer[1]^ rxBuffer[2]^ rxBuffer[3];        // Exclusive OR of first 4bytes received
@@ -748,12 +749,10 @@ enum RFID_StatusCode DEV_RFID_IsUidComplete(devRfidPiccUid_type *rfidPiccUid,
              if (rfidPiccUid->uidByte[0] != RFID_PICC_CMD_CT){ 	     // 4 Byte UID Required CL1 -> [uid0-3, bcc]
                  rfidPiccUidSelState->identDone=1;
                  rfidPiccUid->size = 4;							 
-                 break;
-							 
+                 break;		 
 						 }else if (rfidPiccUid->uidByte[0] == RFID_PICC_CMD_CT){ // 7 Byte UID Required CL1 -> [CT,uid0-2, bcc]
 						     rfidPiccUidSelState->cascadeLevel++;                // repeat uid protocol with next cascade level
-				         return STATUS_UID_INCOMPLETE;
-						 
+				         return STATUS_UID_INCOMPLETE;		 
 			       }
 		    case 10:
 				    if (rfidPiccUid->uidByte[5] != RFID_PICC_CMD_CT){        // 7 Byte UID Required CL2 -> [uid3-6, bcc]
@@ -763,21 +762,16 @@ enum RFID_StatusCode DEV_RFID_IsUidComplete(devRfidPiccUid_type *rfidPiccUid,
 									
 						}else if (rfidPiccUid->uidByte[5] == RFID_PICC_CMD_CT){ // 10 Byte UID Required CL2 -> [CT,uid3-5, bcc]
 						    rfidPiccUidSelState->cascadeLevel++;                // repeat uid protocol with next cascade level
-							  return STATUS_UID_INCOMPLETE;
-						
+							  return STATUS_UID_INCOMPLETE;					
 						}
 				case 15:
 					  if (rfidPiccUid->uidByte[10] != RFID_PICC_CMD_CT){      // 10 Byte UID Required CL2 -> [uid6-9, bcc]
 							rfidPiccUidSelState->identDone=1;
 							rfidPiccUid->size = 10;
 							break;
-				}
-				
+				}	
 				default:
-				    return STATUS_INTERNAL_ERROR;
-				    
-		
-		
+				    return STATUS_INTERNAL_ERROR;		
 		}
     return STATUS_OK;
 }
@@ -852,5 +846,186 @@ enum RFID_StatusCode DEV_RFID_CheckSak(uint8_t *rxBuffer,
 		
 		return RFID_SRC;
 		
+}
+
+// This function remove the CascadeTag (0x88) and BCC within UID buffer
+enum RFID_StatusCode DEV_RFID_ProcessUID(devRfidPiccUid_type *rfidPiccUid,
+                                         devRfidPiccUidIdSelState_type *devRfidPiccUidIdSelState)
+{
+    enum RFID_StatusCode	RFID_SRC;
+
+	  if (devRfidPiccUidIdSelState->stateActive)
+		{
+		    switch (rfidPiccUid->size)
+				{
+					case 4:	// No need to remove BCC - UID in first 4 byte;
+						  return (STATUS_OK); 
+					case 7:
+						  for (int x=1; x<=3; x++)
+					    {
+								  rfidPiccUid->uidByte[x-1] = rfidPiccUid->uidByte[x];
+							}
+							for (int x=5; x<=8; x++)
+					    {
+								  rfidPiccUid->uidByte[x-2] = rfidPiccUid->uidByte[x];
+							}
+						  return (STATUS_OK); 
+					case 10:
+						  for (int x=1; x<=3; x++)
+					    {
+								  rfidPiccUid->uidByte[x-1] = rfidPiccUid->uidByte[x];
+							}
+							for (int x=6; x<=8; x++)
+					    {
+								  rfidPiccUid->uidByte[x-3] = rfidPiccUid->uidByte[x];
+							}
+							for (int x=10; x<=13; x++)
+					    {
+								  rfidPiccUid->uidByte[x-4] = rfidPiccUid->uidByte[x];
+							}
+						  return (STATUS_OK);						  				
+				}		
+		}
+		else
+		{
+				RFID_SRC = STATUS_UID_INCOMPLETE;
+		}
+		return (RFID_SRC);
+}
+
+void DEV_RFID_PrintSectorHeader(void)
+{
+    PHP_UART_TxString(UART0, "\n\rSEC  BLK ");
+    PHP_UART_TxString(UART0, " B00  B01  B02  B03  B04  B05  B06  B07 ");
+    PHP_UART_TxString(UART0, " B08  B09  B10  B11  B12  B13  B14  B15 ");
+	  PHP_UART_TxString(UART0, " ACC  KEY ");
+}
+
+// This function authenticates a sector block for data operation
+enum RFID_StatusCode DEV_RFID_PCD_AuthenticateSector(uint8_t cmd,				// Authentication command code (60h, 61h)
+																										 uint8_t blockAddr,
+																										 uint8_t *keyBytes,
+																										 devRfidPiccUid_type *uid)
+{
+		// The bits in the ComIrqReg register that signals successful completion of the command.
+    uint8_t waitIRq = 0x10;
+
+    // Build command buffer
+    uint8_t sendData[MF_AUTH_BUF_SIZE];						// 12bytes written in FIFO for authentication  
+    sendData[0] = cmd;														// Authentication command code (60h, 61h) - KEY A or KEY B
+    sendData[1] = blockAddr;
+	
+	  // Populate buffer with authentication key of size 6 bytes (MF_KEY_SIZE)
+	  MISC_MEM_Copy(&sendData[2], keyBytes, MF_KEY_SIZE); // 6 key bytes
+
+		// Populate buffer with card UID of size 4 bytes 
+	  MISC_MEM_Copy(&sendData[8], uid->uidByte, 4); // The first 4 bytes of the UID
+
+    // Start the authentication.
+    return RFID_PCDCommunicateWithPICC(RFID_PCD_CMD_MFAuthent, 
+																			 waitIRq,
+																			 &sendData[0], 
+																			 MF_AUTH_BUF_SIZE,
+																			 0, 0, 0, 0, 0);
+}
+
+enum RFID_StatusCode DEV_RFID_PICC_Read(uint8_t blockAddr,
+																				devRfidPiccUid_type *uid,
+																				uint8_t *AuthKey)
+{
+	  enum RFID_StatusCode RFID_SRC;
+ 
+	  uid->dataBufSz = MF_BLK_DATA_SIZE;
+	  uid->blkAddr = blockAddr;
+
+		if (blockAddr % 4 == 0)
+		{
+			RFID_SRC = DEV_RFID_PCD_AuthenticateSector(RFID_PICC_CMD_MF_AUTH_KEY_A,	// Authentication command code (60h, 61h)
+																							   blockAddr,														// block addr
+																							   AuthKey,						// authentication key A
+																							   uid);								// CARD_UID first 4 bytes needed
+		}
+		if (RFID_SRC != STATUS_OK)
+		{
+		    return RFID_SRC;
+		}
+		// Build command buffer
+		uid->dataBuf[0] = RFID_PICC_CMD_MF_READ;
+		uid->dataBuf[1] = blockAddr;
+		// Calculate CRC_A and add to the next buffer index position
+		RFID_SRC = DEV_RFID_PCD_CalculateCRC(uid->dataBuf, 2, &(uid->dataBuf[2]));
+		if (RFID_SRC != STATUS_OK)
+		{
+		    return RFID_SRC;
+		}
+    // Transmit the buffer and receive the response, validate CRC_A.
+    return DEV_RFID_PCD_TransceiveData(uid->dataBuf, 4, uid->dataBuf, &(uid->dataBufSz),
+																			 0, 0, 1);
+} 
+
+enum RFID_StatusCode DEV_RFID_PrintBlockAddrData(enum RFID_StatusCode RFID_SRC,
+																								 devRfidPiccUid_type *uid)
+{
+	 uint8_t idx = 0, strlen=0;
+	 char *byteDataStr;
+	 if (RFID_SRC != STATUS_OK)
+	 {
+		    return RFID_SRC;
+	 }
+	 PHP_UART_TxString(UART0, "\n\r");
+	 DEV_RFID_PrintSectorHeader();
+	 PHP_UART_TxString(UART0, "\n\r");
+	 PHP_UART_TxString(UART0, MISC_Nbr2CharStr(uid->blkAddr/4, 10));
+	 PHP_UART_TxString(UART0, "    ");
+	 PHP_UART_TxString(UART0, MISC_Nbr2CharStr(uid->blkAddr, 10));
+	 PHP_UART_TxString(UART0, "    ");
+	 
+	 
+	 while (idx < (MF_BLK_DATA_SIZE - 0x02)) // excluding CRC 2 bytes at end of buffer
+	 {   
+		   if (uid->dataBuf[idx] < 0x20 || uid->dataBuf[idx] > 0x7E)
+			 {
+						PHP_UART_Tx(UART0, '.');
+			 }
+		   else 
+			 {
+				   PHP_UART_Tx(UART0, uid->dataBuf[idx]);
+			 }
+			 PHP_UART_TxString(UART0, "    ");
+			 idx++;
+
+	 }
+	 // print the block memory data in hex format
+	 PHP_UART_TxString(UART0, "\n\r\t  ");
+	 idx=0;
+	 while (idx < (MF_BLK_DATA_SIZE - 0x02)) // excluding CRC 2 bytes at end of buffer
+	 {
+		 byteDataStr = MISC_Nbr2CharStr(uid->dataBuf[idx], 16);
+		 strlen = MISC_StrLen(byteDataStr);
+		 if (strlen == 1)
+					PHP_UART_Tx(UART0, '0');				// print extra zero if hex contain only one digit
+		 PHP_UART_TxString(UART0, byteDataStr);
+		 PHP_UART_TxString(UART0, "   ");
+		 idx++;
+	 }
+	 
+	 RFID_SRC = STATUS_OK;
+	 return RFID_SRC;
+}
+
+void RFID_SRC_LEDStatus(enum RFID_StatusCode RFID_SRC)
+{
+		if (RFID_SRC == STATUS_OK)
+		{
+			  PHP_LED_Toggle_Green();
+			  PHP_LED_Toggle_Green();
+		    PHP_LED_Toggle_Green();
+		}
+		else
+		{
+			 PHP_LED_Toggle_Red();
+		   PHP_LED_Toggle_Red();
+		   PHP_LED_Toggle_Red();
+		}
 }
 

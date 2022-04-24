@@ -8,6 +8,7 @@
  * ----------
  * DS1 https://www.mouser.com/datasheet/2/302/MF1S503x-89574.pdf
  * DS2 http://wg8.de/wg8n1496_17n3613_Ballot_FCD14443-3.pdf
+ * DS3 Datatsheet MFRC522.pdf Contactless reader IC 112136
  * Tutorial -> https://www.youtube.com/watch?v=QDJMJ_INX3w
  *
  * TIVA TM4C123 Launchpad 
@@ -78,6 +79,11 @@
 #define RFID_PCD_CollReg_B_CollPosNotValid  (0x01<<5)
 #define	RFID_PCD_FIFOLevelReg_B_FlushBuffer (0x01<<7)   // Pg.43 Clear internal FIFO buffer read write pointer & Buffer overflow (OVFL) bit in ErrorReg
 
+// Authentication constants
+#define MF_KEY_SIZE (6)				 // Key A and Key B are both 6 bytes stored in the sector trailer
+#define MF_AUTH_BUF_SIZE (12)	 // Pg.71 DS3 : 12bytes of data to be transmitted to FIFO for AUTH
+#define MF_BLK_DATA_SIZE  (18) // Pg.9/10 DS1 : Each memory block contains 16bytes 
+															 // Pg.9/10 DS1 : Each memory block contains 16bytes 
 /* Pg.11 Datasheet MFRC522 Contactless reader IC
  * Section: 8.1.2.3
  * The MSB of the first byte defines the mode used. To read data from the MFRC522 the
@@ -212,8 +218,11 @@ enum RFID_StatusCode {
 	// A struct used for passing the UID of a PICC.
 	typedef struct {
 		uint8_t		size;			     // Number of bytes in the UID. 4, 7 or 10.
-		uint8_t		uidByte[15];   // 
+		uint8_t		uidByte[15];   // // Buffer to store PICC card UID bytes
 		uint8_t		sak;			     // The SAK (Select acknowledge) byte returned from the PICC after successful selection.
+		uint8_t 	blkAddr;			 // Current block address for data memory access operation
+		uint8_t		dataBuf[18];   // Buffer to store data byte (16) + crc byte (2)
+		uint8_t   dataBufSz;		 // Should not be more than 18	
 	} devRfidPiccUid_type;
 
 
@@ -286,7 +295,7 @@ enum RFID_StatusCode DEV_RFID_PCD_PICC_SelectCascadeLevel(uint8_t *buffer,
  *
  * @return STATUS_OK on success, STATUS_??? otherwise.
  */
-int RFID_PCDCommunicateWithPICC(	uint8_t command,		// The command to execute. One of the PCD_Command enums.
+enum RFID_StatusCode RFID_PCDCommunicateWithPICC(	uint8_t command,		// The command to execute. One of the PCD_Command enums.
 																	uint8_t waitIRq,		// The bits in the ComIrqReg register that signals successful completion of the command.
 																	uint8_t *sendData,  // Pointer to the data to transfer to the FIFO.
 																	uint8_t sendLen,		// Number of bytes to transfer to the FIFO.
@@ -306,7 +315,7 @@ enum RFID_StatusCode DEV_RFID_IsUidComplete(devRfidPiccUid_type *RFID_PICC_UID,
 
 
 
-enum RFID_StatusCode DEV_RFID_PICC_Select( devRfidPiccUid_type *,		      // Pointer to Uid struct. Normally output, but can also be used to supply a known UID.
+enum RFID_StatusCode DEV_RFID_PICC_Select(devRfidPiccUid_type *,		      // Pointer to Uid struct. Normally output, but can also be used to supply a known UID.
 											                    devRfidPiccUidIdSelState_type *,
                                           uint8_t validBits);	
 
@@ -320,5 +329,34 @@ enum RFID_StatusCode DEV_RFID_CheckSak(uint8_t *rxBuffer,
                                        uint8_t *rxByteCount,
                                        devRfidPiccUidIdSelState_type *devRfidPiccUidIdSelState);
 
+enum RFID_StatusCode DEV_RFID_ProcessUID(devRfidPiccUid_type *,
+                                         devRfidPiccUidIdSelState_type *devRfidPiccUidIdSelState);
+
+
+// This function authenticates a sector block for data operation 
+// Operations include(read, write, increment, decrement, restore, transfer)
+enum RFID_StatusCode DEV_RFID_PCD_AuthenticateSector(uint8_t cmd,
+																										 uint8_t blockAddr,
+																										 uint8_t *keyBytes,
+																										 devRfidPiccUid_type *uid);
+/*
+ * This function reads the data store in a block memory after authenticating
+ * input : uint8_t blockAddr        -> block address 0-63 (64 blocks for 1kb RFID card)
+ *																		 Range varies depending on the card type					
+ * input : devRfidPiccUid_type *uid -> Pointer to the uid struct
+ *
+ * @return RFID_StatusCode						-> Read operation status
+ */
+enum RFID_StatusCode DEV_RFID_PICC_Read(uint8_t blockAddr,
+																				devRfidPiccUid_type *uid,
+																				uint8_t *AuthKey);
+// This function prints the header title for the memory 
+void DEV_RFID_PrintSectorHeader(void);
+enum RFID_StatusCode DEV_RFID_PrintBlockAddrData(enum RFID_StatusCode RFID_SRC,
+																								 devRfidPiccUid_type *uid);
+
+
+// This function indicates execution status with LED
+void RFID_SRC_LEDStatus(enum RFID_StatusCode RFID_SRC);
 
 #endif /* DEV_RFID_H_ */

@@ -21,7 +21,7 @@ void PHP_LED_Init(void){
 void PHP_LED_Toggle_Green(void){
 
     LED_PORT->DATA_Bits[LED_GREEN] |= LED_GREEN;          // Turn on LED_GREEN
-    PHP_DelayMs(10);                                      // timer0A - delay 10ms
+    PHP_DelayMs(10);                                     // timer0A - delay 10ms
     LED_PORT->DATA_Bits[LED_GREEN] &= ~LED_GREEN;         // Turn off LED_GREEN
 }
 

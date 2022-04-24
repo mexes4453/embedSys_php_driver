@@ -63,6 +63,9 @@ int main() {
         //BSP_BUZZER_Test();
         //BSP_GLCD_Test(font_table);
         BSP_RFID_TestRegisters(data);
+				
+				// Print the header section for reading tag memory sectors
+				//DEV_RFID_PrintSectorHeader();
 	}
 }
 

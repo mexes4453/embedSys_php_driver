@@ -63,4 +63,21 @@ void MISC_MEM_Copy(uint8_t * dest,       // start address of destination data ar
 void MISC_MEM_Move(uint8_t * dest,       // start address of destination data array
 	                 uint8_t * src,        // start address of source data array 
                    uint16_t byteCount);   // no of byte to move
+
+
+/*------------------- MISC_Nbr2CharStr --------------------*
+ *
+ * This function converts unsigned integer to strings
+ * with 10 digit limit : 1234567890 -> "1234567890"
+ *
+ * @param intVal : unsigned int - pointer 
+ *
+ * @return       : char* - pointer to character (strings)
+ *---------------------------------------------------------*/
+char* MISC_Nbr2CharStr(unsigned int nbr, uint8_t base);
+
+
+//This function returns the number of characters in a string.
+int MISC_StrLen(char *str);
+
 #endif /* MISC_H_ */

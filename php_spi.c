@@ -195,6 +195,7 @@ uint8_t PHP_SPI_SSI_RegBurstWrite(SSI0_Type * SSI_BLK_PTR, uint8_t reg,
 		SPI_GPIO_PORT->DATA_Bits[PIN_SSI0_SS] = PIN_SSI0_SS;                    // Deactivate chip after transmission
     return (uint8_t)(SSI_BLK_PTR->DR);                                      // read received data from slave 
 		*/
+		return (uint8_t)(SSI_BLK_PTR->DR); 
 }
 
 
